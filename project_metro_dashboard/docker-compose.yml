@@ -1,0 +1,77 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    container_name: metro-app
+    environment:
+      - APP_PORT=8000
+      - ES_HOST=http://elasticsearch:9200
+      - KIBANA_HOST=http://kibana:5601
+      - PROM_SCRAPE_PATH=/metrics
+      - DATA_MODE=sim
+      - SIM_TRAIN_COUNT=10
+      - SIM_STATION_COUNT=20
+      - TRAIN_CAPACITY=200
+      - OPTIMIZE_INTERVAL_SECONDS=60
+      - ES_ENABLED=true
+      - LOG_LEVEL=INFO
+    ports:
+      - "8000:8000"
+    depends_on:
+      - elasticsearch
+      - prometheus
+
+  prometheus:
+    image: prom/prometheus:v2.55.1
+    container_name: prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - ./docker/prometheus.rules.yml:/etc/prometheus/alert.rules.yml:ro
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --web.enable-lifecycle
+      - --web.enable-admin-api
+      - --web.external-url=http://localhost:9090
+      - --enable-feature=auto-gomaxprocs
+      - --alertmanager.notification-queue-capacity=10000
+      - --web.page-title=Metro Prometheus
+      - --web.console.templates=/usr/share/prometheus/consoles
+      - --web.console.libraries=/usr/share/prometheus/console_libraries
+      - --rules.alert.for-outage-tolerance=1h
+      - --rules.alert.for-grace-period=10m
+      - --rules.alert.resend-delay=10m
+    ports:
+      - "9090:9090"
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.15.3
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9200/"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.15.3
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+      - XPACK_SECURITY_ENABLED=false
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+
