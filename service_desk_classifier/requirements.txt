@@ -1,0 +1,21 @@
+# ── Core Deep Learning ─────────────────────────────────────────────────────
+torch>=2.0.0
+# torchvision is NOT required for this project (text-only)
+
+# ── Data & ML Utilities ────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# ── Visualisation ──────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ── Config & Utilities ────────────────────────────────────────────────────
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# ── Optional: Jupyter support ──────────────────────────────────────────────
+# Uncomment if you want to run the notebook
+# jupyter>=1.0.0
+# ipykernel>=6.0.0

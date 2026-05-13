@@ -1,0 +1,121 @@
+ticket_id,text,category
+1,"My laptop won't turn on after the latest Windows update. The screen stays black.",Hardware
+2,"I can't log into my email account. It says my password is incorrect even after resetting.",Account Access
+3,"The printer in room 204 is showing offline and won't print anything.",Hardware
+4,"Need to install Adobe Photoshop on my workstation for the design project.",Software Installation
+5,"VPN connection keeps dropping every 10 minutes when working from home.",Network
+6,"My monitor flickers randomly and sometimes goes completely black.",Hardware
+7,"Request to reset my Active Directory password. Locked out after too many attempts.",Account Access
+8,"Outlook calendar is not syncing with my phone. Appointments are missing.",Software Bug
+9,"Can't connect to the company WiFi after moving to the new office.",Network
+10,"Please install Microsoft Office 365 on the new laptop assigned to me.",Software Installation
+11,"My keyboard keys are stuck and some are not responding.",Hardware
+12,"Getting error 0x80070005 when trying to open Excel files from SharePoint.",Software Bug
+13,"Need VPN access for the new remote employee starting Monday.",Account Access
+14,"The office router keeps resetting and causing internet outages.",Network
+15,"Zoom crashes every time I try to join a meeting with video enabled.",Software Bug
+16,"Headset microphone not working during Teams calls.",Hardware
+17,"Request access to the HR portal for the new employee Jane Smith.",Account Access
+18,"Python 3.10 installation required for the data science team's project.",Software Installation
+19,"Slow internet speeds in the marketing department. Pages take forever to load.",Network
+20,"My mouse scroll wheel is not working after a driver update.",Hardware
+21,"Two-factor authentication app not generating codes correctly.",Account Access
+22,"Chrome browser keeps crashing when opening more than 5 tabs.",Software Bug
+23,"Need to install Slack on all machines in the sales department.",Software Installation
+24,"Company email not receiving external messages since yesterday morning.",Network
+25,"Mouse double-clicking when single click is performed.",Hardware
+26,"SharePoint permissions not updated after role change. Can't access new folder.",Account Access
+27,"Teams video is pixelated and audio cuts out during all calls.",Software Bug
+28,"Request to install Docker Desktop for the DevOps team's workflow.",Software Installation
+29,"Network drive Z: disconnecting randomly throughout the day.",Network
+30,"Laptop battery drains within 30 minutes even when plugged in.",Hardware
+31,"New employee needs access to Salesforce CRM system.",Account Access
+32,"Excel macro throws runtime error 1004 when running the monthly report.",Software Bug
+33,"Install AutoCAD 2024 on the workstations in the engineering room.",Software Installation
+34,"Wireless access point on the 3rd floor has very poor signal coverage.",Network
+35,"Desktop computer making loud grinding noise from the fan area.",Hardware
+36,"User account expired before the scheduled renewal date.",Account Access
+37,"PowerPoint keeps freezing when embedding large video files.",Software Bug
+38,"Need Tableau Desktop installed for the business intelligence team.",Software Installation
+39,"VoIP phone system is showing all lines as busy with no active calls.",Network
+40,"External hard drive not recognized when plugged into USB port.",Hardware
+41,"Admin rights needed temporarily to install a required tool for audit.",Account Access
+42,"Windows 10 update stuck at 45% for the past 6 hours.",Software Bug
+43,"Please install Git and GitHub Desktop for the new developer.",Software Installation
+44,"Firewall blocking access to the vendor's web portal needed for work.",Network
+45,"Screen resolution resets to 800x600 after every reboot.",Hardware
+46,"Forgot username for the project management tool. Need recovery.",Account Access
+47,"SAP application throwing dump error when running financial reports.",Software Bug
+48,"Java Runtime Environment update needed for the legacy billing system.",Software Installation
+49,"Email attachment size limit too small. Need it increased for large files.",Network
+50,"Webcam not detected by the system after driver reinstallation.",Hardware
+51,"Need group mailbox access for the new team member in support.",Account Access
+52,"Antivirus software flagging legitimate company tool as a threat.",Software Bug
+53,"Install Postman for the backend development team's API testing.",Software Installation
+54,"DNS resolution failing for internal company servers intermittently.",Network
+55,"USB-C docking station not charging laptop when connected.",Hardware
+56,"Single sign-on not working for the cloud storage application.",Account Access
+57,"Adobe Reader crashes when printing PDF files larger than 50 pages.",Software Bug
+58,"Setup Node.js and npm environment for the frontend development team.",Software Installation
+59,"DHCP server not assigning IP addresses to new devices on the network.",Network
+60,"Company laptop overheating and shutting down during video calls.",Hardware
+61,"User needs to be removed from admin group after project completion.",Account Access
+62,"Slack notifications stopped working after the latest app update.",Software Bug
+63,"Install MATLAB for the research and engineering department.",Software Installation
+64,"SSL certificate expired on the internal company web portal.",Network
+65,"Mechanical keyboard has several non-functional keys after liquid spill.",Hardware
+66,"Password policy requiring change too frequently. Causing user lockouts.",Account Access
+67,"Skype for Business showing contacts as always offline.",Software Bug
+68,"Need to install Figma for the UI/UX design team's collaboration.",Software Installation
+69,"Network switch port causing packet loss on critical server connection.",Network
+70,"Monitor not detected when using DisplayPort cable.",Hardware
+71,"New contractor needs temporary email account and network access.",Account Access
+72,"Windows Explorer crashes when navigating to network shared drive.",Software Bug
+73,"Install Visual Studio Code for the entire software development team.",Software Installation
+74,"BGP routing issue causing some external sites to be unreachable.",Network
+75,"Trackpad on MacBook unresponsive after macOS Ventura update.",Hardware
+76,"MFA setup not completing due to error in authenticator provisioning.",Account Access
+77,"Microsoft Teams status not updating to 'Away' when computer is idle.",Software Bug
+78,"Install Oracle JDK 17 for the application server migration project.",Software Installation
+79,"Bandwidth throttling affecting video conference quality in afternoon.",Network
+80,"SSD storage almost full causing system to run extremely slowly.",Hardware
+81,"Service account password expired causing batch jobs to fail overnight.",Account Access
+82,"OneDrive sync conflict errors on multiple files simultaneously.",Software Bug
+83,"Need Wireshark installed for the network troubleshooting team.",Software Installation
+84,"NTP server misconfiguration causing time sync issues across domain.",Network
+85,"Multiple USB ports stopped working after power surge in office.",Hardware
+86,"User moved to different department needing new access permissions.",Account Access
+87,"JIRA integration with Confluence broken after recent server update.",Software Bug
+88,"Install Anaconda Python distribution for the data analytics team.",Software Installation
+89,"QoS not prioritizing VoIP traffic causing call quality degradation.",Network
+90,"Graphics card not detected after reinstalling the operating system.",Hardware
+91,"Shared team account password needs to be rotated per security policy.",Account Access
+92,"Eclipse IDE not launching due to JVM configuration mismatch.",Software Bug
+93,"Install Citrix Workspace for remote access to the virtual desktop.",Software Installation
+94,"Load balancer misconfigured causing 502 errors on the web application.",Network
+95,"Laptop speaker producing crackling sound at medium to high volumes.",Hardware
+96,"Privileged access management tool not unlocking the admin account.",Account Access
+97,"Git repository not syncing changes to the remote origin branch.",Software Bug
+98,"Need RDP client configured for accessing the legacy terminal server.",Software Installation
+99,"WAN link failover not triggering when primary connection drops.",Network
+100,"CPU utilization at 100% due to a rogue background system process.",Hardware
+101,"My computer screen went blue and now it keeps restarting over and over.",Hardware
+102,"I've been trying to log in for an hour - keeps saying wrong credentials.",Account Access
+103,"The WiFi in the conference room is too slow for presentations.",Network
+104,"We need the new design software installed before the client meeting.",Software Installation
+105,"App keeps crashing and losing all my work. Very frustrating.",Software Bug
+106,"Keyboard shortcut stopped working in the coding environment.",Software Bug
+107,"Need to set up new hire's laptop with all standard software.",Software Installation
+108,"The entire floor lost network connectivity this morning.",Network
+109,"My account was locked after I returned from vacation.",Account Access
+110,"Company laptop making beeping sounds and won't boot.",Hardware
+111,"Printer shows error code E5 and won't clear.",Hardware
+112,"Cannot access internal wiki after password change.",Account Access
+113,"Slow application performance since the server migration.",Software Bug
+114,"Setup development environment for the new junior developer.",Software Installation
+115,"Remote office cannot reach the main datacenter applications.",Network
+116,"Display adapter driver crash causing BSOD repeatedly.",Hardware
+117,"Employee leaving company - need account deactivation today.",Account Access
+118,"Scheduled task not running on the application server.",Software Bug
+119,"Install security certificate for the new compliance scanning tool.",Software Installation
+120,"Intermittent packet loss affecting the trading floor systems.",Network

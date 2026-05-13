@@ -1,0 +1,52 @@
+data:
+  raw_data_path: "data/tickets.csv"
+  processed_data_path: "data/processed/"
+  text_column: "text"
+  label_column: "category"
+  test_size: 0.15
+  val_size: 0.15
+  random_seed: 42
+
+preprocessing:
+  max_length: 128
+  min_token_freq: 1
+  vocab_size: 10000
+  lowercase: true
+  remove_punctuation: false
+  remove_stopwords: false
+
+model:
+  embedding_dim: 128
+  hidden_dim: 256
+  num_layers: 2
+  dropout: 0.3
+  bidirectional: true
+  architecture: "bilstm"
+
+training:
+  batch_size: 32
+  epochs: 30
+  learning_rate: 0.001
+  weight_decay: 0.00001
+  patience: 7
+  gradient_clip: 1.0
+  class_weight_strategy: "balanced"
+
+evaluation:
+  metrics:
+    - accuracy
+    - weighted_f1
+    - macro_f1
+    - confusion_matrix
+    - classification_report
+
+paths:
+  model_save_dir: "models/"
+  best_model_name: "best_model.pt"
+  logs_dir: "logs/"
+  results_dir: "results/"
+
+logging:
+  level: "INFO"
+  log_to_file: true
+  log_filename: "logs/training.log"
